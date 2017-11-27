@@ -52,6 +52,11 @@ header{
 .menu a{
 	text-decoration: none;
 	color: black;
+	padding: .2em .4em;
+}
+.menu a:hover{
+	background: #2196F3;
+	color: white;
 }
 .banner-container{
 	margin-top: 95px;
