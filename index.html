@@ -10,7 +10,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 	<link rel="stylesheet" href="css/icomoon.css">
 	<script src="/js/modernizr-custom.js"></script>
-
+	
 </head>
 <body>
 	<header class="main-header">
@@ -23,7 +23,7 @@
 		<nav class="menu">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="sobremi.html">Sobre mí</a></li>
+          <li><a href="sobremi.html">Sobremí</a></li>
           <li><a href="portafolio.html">portafolio</a></li>
           <li><a href="contacto.html">contacto</a></li>
         </ul>
@@ -41,7 +41,13 @@
 	</main>
 
 	<div id="contact_button"></div>
-
+	
+	<div class="modal" id="modal">
+		<h1>Formulario de contacto</h1>
+		<input type="text"> Tu nombre *
+		<input type="email"> Tu email *
+		<textarea name="Mensaje" id="" cols="30" rows="10"></textarea>
+	</div>
 
 
 
@@ -56,8 +62,16 @@
 		<p>© 2017 All rights reserved | Privacity Policy</p>
 		
 	</footer>
+	
+	<script>
+		const $button = document.getElementById('contact_button')
+		const $modal = document.getElementById('modal')
 
-
+		$button.addEventListener("click", ()=>{
+			$button.classList.toggle("is-click");
+			$modal.classList.toggle("visible");
+		})
+	</script>
 </body>
 </html>
 
